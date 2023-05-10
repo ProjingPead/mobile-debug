@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: #000000;
+
+	overflow-x: hidden;
+
+	width: 100vw;
+	height: 100vh;
+	padding-top: 10px;
+}
+
+@media only screen and (min-width: 601px) {
+	body {
+		overflow-y: hidden;
+	}
+
+	.web_width {
+		display: block;
+
+	}
+
+	.Mobile_Width {
+		display: none;
+	}
+
+	strong {
+		color: #ea5b0c;
+
+		text-transform: uppercase;
+	}
+
+	.Header1 {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: space-around;
+		gap: 120px;
+		margin-left: 0;
+
+		padding: 0;
+	}
+
+	#logoProjing {
+		width: 291px;
+		height: 93px;
+		left: 10px;
+		margin-right: 45px;
+	}
+
+	.NavHeader {
+		display: flex;
+		gap: 60px;
+		padding-bottom: 25px;
+	}
+
+	.NavHeader-item {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 29px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 0.21em;
+		text-transform: uppercase;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		color: #ffffff;
+	}
+
+	/*main*/
+
+	.sphericals {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		z-index: -1;
+		width: 450px;
+		height: 450px;
+		left: 180px;
+		top: 30px;
+	}
+
+	#elipse1 {
+		position: relative;
+		width: 450px;
+		height: 450px;
+		left: 65px;
+		transform: translateX(0);
+	}
+
+	#elipse2 {
+		position: relative;
+		width: 100px;
+		height: 100px;
+		left: 200px;
+		margin-top: 40px;
+	}
+
+	#Main1 {
+		position: relative;
+		padding-top: 100px;
+		width: 100%;
+		height: 570px;
+		left: 0;
+		top: 130px;
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+
+	}
+
+	.MainText {
+		position: relative;
+		width: 500px;
+		left: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 35px;
+	}
+
+	#titulo1 {
+		width: 500px;
+		font-family: "Poppins";
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 50px;
+		letter-spacing: -0.04em;
+		color: #ffffff;
+		margin: 0;
+		white-space: nowrap;
+	}
+
+	.destaque {
+		width: 100px;
+		color: #ff7024;
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 45px;
+		margin: 0;
+	}
+
+	#descrição1 {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28px;
+		/* or 117% */
+
+		color: #ffffff;
+	}
+
+	.button {
+		display: inline-block;
+		background-color: transparent;
+		padding: 0.75rem 1.25rem;
+		font-family: "Poppins";
+		font-style: normal;
+		border-radius: 10rem;
+		border: #ea5b0c 3px;
+		border-style: solid;
+		color: white;
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 0.15rem;
+		transition: all 0.3s;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.button:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: none;
+		border-radius: 10rem;
+		z-index: -2;
+	}
+
+	.button:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: transparent;
+		transition: all 0.3s;
+		border-radius: 10rem;
+		z-index: -1;
+	}
+
+	.button:hover {
+		color: #ff8c32;
+	}
+
+	.button:hover:before {
+		width: 100%;
+	}
+
+	/*SERVICES*/
+
+	.servicos {
+		position: absolute;
+		z-index: 20;
+		padding: 0;
+		width: 1050px;
+		height: 700px;
+		right: 0px;
+		top: 100px;
+		transform: translateY(600px);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+	}
+
+	.rightMenu {
+		position: absolute;
+		z-index: 10;
+		top: 260px;
+		right: -200px;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+
+		transform: rotate(90deg);
+	}
+
+	.rightMenu-buttons {
+		background-color: transparent;
+		border: transparent;
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		cursor: pointer;
+
+		text-align: center;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	#revestimento {
+		position: absolute;
+		flex-direction: column;
+		right: 180px;
+		top: 60px;
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+		width: 800px;
+		height: 430px;
+	}
+
+	.title-services {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 50px;
+		/* or 106% */
+
+		text-align: right;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	.descripition-services {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -1px;
+		/* or 117% */
+
+		text-align: right;
+		margin: 10px;
+		color: #ffffff;
+	}
+
+	.images-services {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		align-content: space-between;
+		gap: 70px;
+		top: 310px;
+		right: -100px;
+		width: 700px;
+		height: 150px;
+	}
+
+	.images-services_itens {
+		width: 150px;
+		height: 150px;
+	}
+
+	#tubulacoes {
+		position: absolute;
+
+		flex-direction: column;
+		right: 180px;
+		top: 60px;
+		width: 800px;
+		height: 430px;
+		transform: translateY(600px);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+	}
+
+	#reservatórios {
+		position: absolute;
+
+		flex-direction: column;
+		right: 180px;
+		top: 60px;
+		width: 800px;
+		height: 430px;
+		transform: translateY(600px);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+	}
+
+	#sobre-grid {
+		position: absolute;
+		z-index: 20;
+		padding: 0;
+		width: 1050px;
+		height: 700px;
+		right: 0px;
+		top: 100px;
+		transform: translateY(600px);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+	}
+
+	#Sobre-itens {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		right: 180px;
+		top: 60px;
+		width: 800px;
+		height: 430px;
+		transform: translateY(0);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+	}
+
+	.descripition-sobre {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+		/* or 117% */
+		margin-top: 25px;
+		text-align: right;
+
+		color: #ffffff;
+	}
+
+	.images-sobre {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		gap: 40px;
+		top: 75px;
+		right: 20px;
+		width: 100px;
+		height: 700px;
+	}
+
+	.imagens_sobre-item {
+		width: 100px;
+		height: 100px;
+	}
+
+	/*Grid contato*/
+	.info_grid_contact {
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		top: 120px;
+		right: 60px;
+		width: 450px;
+		height: 480px;
+		padding: 25px;
+		padding-left: 120px;
+		border: 6px solid #ea5b0c;
+		border-radius: 180px 33px 33px 33px;
+		transform: translateX(600px);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+	}
+
+	.titulo_contact {
+		margin-top: 50px;
+		margin-bottom: 10px;
+		font-family: "Poppins";
+		text-align: right;
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 40px;
+		letter-spacing: 0.16em;
+		color: #ffffff;
+	}
+
+	.subtitle_contact {
+		font-family: "Poppins";
+		font-style: normal;
+		text-align: right;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 42px;
+		color: #ffffff;
+	}
+
+	.conteiner_infos_contact {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+		height: 210px;
+	}
+
+	.dados_contact {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 15px;
+		width: 100%;
+		height: 70px;
+	}
+
+	.dados_contact :hover {
+		background-color: #ff8c32;
+		border: 2px solid #ea5b0c;
+		border-radius: 6px;
+	}
+
+	.icon_contact {
+		position: flex;
+		width: 20px;
+		height: 20px;
+	}
+
+	.text_dados_contact {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color: #ffffff;
+	}
+
+}
+
+/*Mobile styles*/
+
+@media only screen and (max-width: 600px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.web_width {
+		display: none;
+
+	}
+
+	.Mobile_Width {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		gap: 10px;
+		overflow-X: hidden;
+
+	}
+
+	#logoProjing {
+		margin: 0;
+		width: 300px;
+
+
+	}
+
+	.luminiscence {
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		right: -20px;
+		top: -5.58px;
+
+		background: rgba(247, 131, 97, 0.5);
+		filter: blur(100px);
+	}
+
+	.luminiscence2 {
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		left: -20px;
+		top: 750px;
+
+		background: rgba(247, 131, 97, 0.5);
+		filter: blur(100px);
+	}
+
+	.welcome {
+		width: 100vw;
+		height: 54px;
+
+	}
+
+	.title_mobile {
+
+		margin-left: 30px;
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 24px;
+		/* identical to box height */
+
+
+		color: #FFFFFF;
+	}
+
+	.description_mobile {
+
+
+		margin-left: 30px;
+		margin-top: 10px;
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+		/* identical to box height */
+
+
+		color: #8A8A8A;
+	}
+
+	.banners {
+		width: calc(100% - 15px);
+		height: 200px;
+		background-color: cadetblue;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 12px;
+		transition: all;
+		transition-duration: 1s;
+
+	}
+
+	.bar_mobile {
+
+		width: calc(100% - 10px);
+		height: 10px;
+		background: #EA5B0C;
+		border-radius: 3px;
+	}
+
+
+	.services_mobile {
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100vw;
+		height: max-content;
+		padding: 20px;
+
+	}
+
+	.services_mobile>h1 {
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 16px;
+		margin-top: 30px;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		color: #FFFFFF;
+	}
+
+	.areas_mobile {
+		display: flex;
+		box-sizing: border-box;
+		flex-direction: row;
+		overflow-x: scroll;
+		width: calc(100vw - 10px);
+		height: 300px;
+		gap: 15px;
+
+
+	}
+
+	.areas_mobile>div {
+		display: block;
+		margin-left: 20px;
+		min-width: 212px;
+		height: 276px;
+		background-color: #EA5B0C;
+		border-radius: 12px;
+	}
+
+	.menu_mobile {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		padding: 20px;
+		width: 100vw;
+		height: 50px;
+
+	}
+
+	.menu_mobile>i {
+		font-size: 32px;
+		color: white;
+
+	}
+
+	.services_description {
+
+		display: block;
+		position: fixed;
+		margin-top: 240px;
+		width: 100vw;
+		height: 82%;
+		background-color: #000000;
+		border-radius: 40px 40px 0px 0px;
+		overflow-y: scroll;
+
+	}
+
+	.back_serv {
+		position: absolute;
+		z-index: -1;
+		width: 100vw;
+		height: 90%;
+		background-image: url(../img/Mobile/pead_services.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0px 0px 140px;
+		border-radius: 40px 40px 0px 0px;
+		font-size: 48px;
+		color: white;
+		padding: 20px;
+
+	}
+
+	.text_serv {
+		color: white;
+		margin-top: 490px;
+		width: 100vw;
+		height: 82%;
+		padding: 25px;
+
+	}
+
+	.text_serv>h1 {
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 16px;
+		margin-top: 30px;
+
+		letter-spacing: -1px;
+		color: #FFFFFF;
+	}
+
+	.text_serv>p {
+
+		margin-top: 30px;
+		font-family: 'Nunito Sans';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 25px;
+
+		/* identical to box height */
+
+
+		color: #ffffff;
+	}
+
+
+
+
+
+}
