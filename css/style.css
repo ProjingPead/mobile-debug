@@ -507,7 +507,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		padding: 15px;
-		gap: 10px;
+		gap: 5px;
 		overflow-X: hidden;
 
 	}
@@ -553,7 +553,7 @@ body {
 		font-family: 'Nunito Sans';
 		font-style: normal;
 		font-weight: 600;
-		font-size: 25px;
+		font-size: 22px;
 		line-height: 24px;
 		/* identical to box height */
 
@@ -580,7 +580,7 @@ body {
 	.banners {
 		width: calc(100% - 15px);
 		height: 200px;
-		background-color: cadetblue;
+		background-image: url(../img/Mobile/banner1.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-radius: 12px;
@@ -613,9 +613,9 @@ body {
 		font-family: 'Nunito Sans';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 25px;
+		font-size: 22px;
 		line-height: 16px;
-		margin-top: 30px;
+		margin-top: 20px;
 		text-transform: uppercase;
 		letter-spacing: -1px;
 		color: #FFFFFF;
@@ -638,8 +638,28 @@ body {
 		margin-left: 20px;
 		min-width: 212px;
 		height: 276px;
-		background-color: #EA5B0C;
+
 		border-radius: 12px;
+	}
+
+	.areas_mobile>div.s1 {
+		background-image: url(../img/Mobile/service_tubPEAD.png);
+		background-size: cover;
+	}
+
+	.areas_mobile>div.s2 {
+		background-image: url(../img/Mobile/service_revestimento.png);
+		background-size: cover;
+	}
+
+	.areas_mobile>div.s3 {
+		background-image: url(../img/Mobile/service_reservatorios.png);
+		background-size: cover;
+	}
+
+	.areas_mobile>div.s4 {
+		background-image: url(../img/Mobile/service_ete.png);
+		background-size: cover;
 	}
 
 	.menu_mobile {
@@ -654,14 +674,15 @@ body {
 	}
 
 	.menu_mobile>i {
+
 		font-size: 32px;
 		color: white;
 
 	}
 
-	.services_description {
+	.services_description_page {
 
-		display: block;
+		display: none;
 		position: fixed;
 		margin-top: 240px;
 		width: 100vw;
@@ -669,6 +690,8 @@ body {
 		background-color: #000000;
 		border-radius: 40px 40px 0px 0px;
 		overflow-y: scroll;
+		transition: step-start;
+		transition-duration: 1s;
 
 	}
 
@@ -687,6 +710,8 @@ body {
 		padding: 20px;
 
 	}
+
+
 
 	.text_serv {
 		color: white;
