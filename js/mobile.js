@@ -1,9 +1,12 @@
-const banner = document.querySelector(".banners")
+const banner = document.querySelector(".banner")
 let slide = 0;
-const banner1 = "url(../img/Mobile/banner1.png)"
-const banner2 = "url(../img/Mobile/banner2.png)"
-const banner3 = "url(../img/Mobile/banner3.png)"
-const banner4 = "url(../img/Mobile/banner4.png)"
+const banner1 = "./img/Mobile/banner1.png"
+const banner2 = "./img/Mobile/banner2.png"
+const banner3 = "./img/Mobile/banner3.png"
+const banner4 = "./img/Mobile/banner4.png"
+
+
+
 
 function ChangeSlides() {
     slide++;
@@ -11,18 +14,14 @@ function ChangeSlides() {
     console.log(slide);
 
     if (slide === 1) {
-        banner.style.backgroundImage = banner1
+        banner.setAttribute('src', banner1);
     } else if (slide === 2) {
-        banner.style.backgroundImage = banner2
+        banner.setAttribute('src', banner2);
     } else if (slide === 3) {
-        banner.style.backgroundImage = banner3
+        banner.setAttribute('src', banner3);
     } else if (slide === 4) {
-        banner.style.backgroundImage = banner4
+        banner.setAttribute('src', banner4);
     }
 }
 
 setInterval(ChangeSlides, 5000)
-
-
-
-
