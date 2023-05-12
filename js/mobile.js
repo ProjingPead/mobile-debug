@@ -14,13 +14,13 @@ function ChangeSlides() {
     console.log(slide);
 
     if (slide === 1) {
-        banner.setAttribute('src', banner1);
-    } else if (slide === 2) {
         banner.setAttribute('src', banner2);
-    } else if (slide === 3) {
+    } else if (slide === 2) {
         banner.setAttribute('src', banner3);
-    } else if (slide === 4) {
+    } else if (slide === 3) {
         banner.setAttribute('src', banner4);
+    } else if (slide === 4) {
+        banner.setAttribute('src', banner1);
     }
 }
 
