@@ -2,8 +2,8 @@ const banner = document.querySelector(".banners")
 let slide = 0;
 const banner1 = "url(../img/Mobile/banner1.png)"
 const banner2 = "url(../img/Mobile/banner2.png)"
-const banner3 = "url('../img/Mobile/banner3.png')"
-const banner4 = "url('../img/Mobile/banner4.png')"
+const banner3 = "url(../img/Mobile/banner3.png)"
+const banner4 = "url(../img/Mobile/banner4.png)"
 
 function ChangeSlides() {
     slide++;
