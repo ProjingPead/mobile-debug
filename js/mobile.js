@@ -1,9 +1,9 @@
 const banner = document.querySelector(".banner")
 let slide = 0;
-const banner1 = "img/Mobile/banner1.png"
-const banner2 = "img/Mobile/banner2.png"
-const banner3 = "img/Mobile/banner3.png"
-const banner4 = "img/Mobile/banner4.png"
+const banner1 = "./img/Mobile/banner1.png"
+const banner2 = "./img/Mobile/banner2.png"
+const banner3 = "./img/Mobile/banner3.png"
+const banner4 = "./img/Mobile/banner4.png"
 
 
 
